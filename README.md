@@ -1,4 +1,4 @@
-rfidvac
+ravenhid
 ===
 
 Hardware and software to run a RFID reader to harvest card information.  This is still a work in progress. It will eventually be a board that runs a RFID reader off a Lithium Polymer battery.  A larger reader, such as those in garages, will be used for long range reading.  The board design will support multiple methods of getting the harvested information: 
