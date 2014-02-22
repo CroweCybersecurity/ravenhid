@@ -9,19 +9,27 @@ class Weigand {
     ~Weigand();
     
     void resetdata();
-    void addbit(boolean type);
+    void add0();
+    void add1();
+    
+    uint64_t parsecard();
 
     boolean loop();
    
     unsigned int getcount();
-    unsigned long getdata();
+    uint64_t getdata();
+    unsigned long gettime();
   private: 
-    unsigned long _data;
+    uint64_t _data;
     unsigned int _count;
     unsigned long _time;
     
+    unsigned int _d0time;
+    unsigned int _d1time;
+    
     void prepPin(int pin);
-    void parseCode();
+
+    
 };
 
 

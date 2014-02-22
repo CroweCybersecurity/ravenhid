@@ -1,4 +1,4 @@
-void setLCDColor(lcdstatus s) {
+ void setLCDColor(lcdstatus s) {
   switch(s) {
   case error: 
     lcdWriteColor(0xff, 0x00, 0x00);
