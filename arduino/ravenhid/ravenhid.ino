@@ -1,3 +1,4 @@
+#include <SD.h>
 #include <LiquidCrystal.h>
 #include <SoftPWM.h>
 #include "lcd.h"
@@ -16,12 +17,12 @@
 #define RFID_D0 2
 #define RFID_D1 3
 
-#define SUPPORT_LONGLONG
+#define SD_CS 10
 
-#define READER_DELAY 500 // How many ms do we wait before we call it read
-
-LiquidCrystal lcd(LCD_RS, LCD_ENABLE, LCD_D4, LCD_D5, LCD_D6, LCD_D7);
 Weigand w(RFID_D0, RFID_D1);
+LiquidCrystal lcd(LCD_RS, LCD_ENABLE, LCD_D4, LCD_D5, LCD_D6, LCD_D7);
+
+boolean startupError = false;
 
 void readD0() {
   w.add0();
@@ -33,52 +34,85 @@ void readD1() {
 
 void setup() {
   Serial.begin(57600);
-  Serial.print(F("Starting up... "));
+  Serial.println(F("[*] Setting up..."));
   
-  Serial.print(F("lcd "));
   lcd.begin(16, 2);
   lcdClear();
-  lcd.print("Starting up...");
- 
-  SoftPWMBegin();
-  
+  lcdWriteLine1("Starting up...");
+   
   pinMode(A2, OUTPUT);
   pinMode(A3, OUTPUT);
   pinMode(A4, OUTPUT);
+  SoftPWMBegin();
 
-  Serial.print(F("interrupts "));     
   attachInterrupt(0, readD0, FALLING);
   attachInterrupt(1, readD1, FALLING);
 
-  //Delay a little bit to let things settle out.
-  delay(10);
-
-  Serial.print(F("weigand "));
   w.resetdata();
 
-  Serial.println(F("done."));
-  lcdClear();
+  pinMode(SD_CS, OUTPUT);
+  if(!SD.begin(SD_CS)) {
+    Serial.println("[!] SD card failed or not present.");
+    setLCDColor(error);
+    lcdClear();
+    lcdWriteLine1("No SD Card Found");
+    startupError = true;
+  }
+  
+  if(startupError) {
+    delay(5000); //Give our users a chance to read the error instead of coloring the rainbow.
+  } else {
+    lcdRainbow(); // Wait for a little bit to let the data lines settle.  Since we've got time, lets show off.
+  }
+  
+  lcdClear();  
+  Serial.println("[*] Setup complete.");
 }
 
 void loop() {
   if(w.loop()) {
      Serial.println("");
      setLCDColor(green);
-     lcdWriteLine1("Got a card!");
-     Serial.print(F("Card bytes: "));
-     Serial.println(w.getcount());
-     Serial.print(F("Card data: "));
-     Serial.println(w.getdata(), BIN);
-     Serial.print(F("Card data w/ preamble: "));
-     Serial.println(w.parsecard(), BIN);
-     Serial.println(w.parsecard(), HEX);
+     lcdWriteCard(w.getcount(), w.parsecard());
+     sdWriteCard();
 
+     delay(2000);
      w.resetdata();
      lcdClear();
    } else {
-     setLCDColor(error);
-     lcdWriteLine1("Waiting");
+     setLCDColor(info);
+     lcdWriteLine1("Hunting...");
+     lcd.setCursor(0,1);
+     lcd.print(freeRam());
+     lcd.print(" b");
    } 
+}
+
+void sdWriteCard() {
+  File csvFile = SD.open("cards.csv", FILE_WRITE);
+  if(csvFile) {
+    uint64_t card = w.parsecard();
+    csvFile.print(w.getcount());
+    csvFile.print(",");
+    csvFile.print(card, BIN);
+    csvFile.print(",");
+    csvFile.print(card, HEX);
+    csvFile.println("");
+    csvFile.close();
+    
+    Serial.print("[*] Got data: '");
+    Serial.print(w.getcount());
+    Serial.print(",");
+    Serial.print(card, BIN);
+    Serial.print(",");
+    Serial.print(card, HEX);
+    Serial.println("'");
+  } else {
+    lcdClear();
+    setLCDColor(error);
+    lcdWriteLine1("Error writing.");
+    lcdWriteLine2("to file."); 
+  }
 }
 
 extern uint8_t* __brkval;

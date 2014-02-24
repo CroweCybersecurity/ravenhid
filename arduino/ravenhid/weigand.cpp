@@ -33,7 +33,6 @@ void Weigand::resetdata() {
  
 void Weigand::add0() {
   if(millis() - _d0time > 1) {
-    Serial.print("0");
     _count++;
     
     _data = _data << 1;
@@ -45,7 +44,6 @@ void Weigand::add0() {
 
 void Weigand::add1() {
   if(millis() - _d1time > 1) {
-    Serial.print("1");
     _count++;
     
     _data = _data << 1;
@@ -83,11 +81,8 @@ uint64_t Weigand::getdata() {
  * PARSING CODES
  *********************************************************/
 uint64_t Weigand::parsecard() {
-  uint64_t tmp = _data;
-
   switch(_count) {
     case 26:    
       return _data + 137506062336LL;
-      break;
   }
 }
