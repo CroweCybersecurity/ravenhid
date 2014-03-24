@@ -20,7 +20,7 @@
 #define RFID_D1 3
 
 #define SD_CS 10
-
+ 
 AltSoftSerial BLEMini; 
 
 
