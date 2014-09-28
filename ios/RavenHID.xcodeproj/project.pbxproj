@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A01EEB3719CF1469009F78D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EEB3619CF1469009F78D1 /* main.m */; };
+		A01EEB3A19CF1469009F78D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EEB3919CF1469009F78D1 /* AppDelegate.m */; };
+		A01EEB4519CF146A009F78D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01EEB4419CF146A009F78D1 /* Images.xcassets */; };
+		A01EEB4819CF146A009F78D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01EEB4619CF146A009F78D1 /* LaunchScreen.xib */; };
+		A01EEB5419CF146A009F78D1 /* RavenHIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EEB5319CF146A009F78D1 /* RavenHIDTests.m */; };
+		A01EEB6219CF2E6A009F78D1 /* MainPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EEB6119CF2E6A009F78D1 /* MainPageController.m */; };
+		A01EEB6519CF2FDD009F78D1 /* MainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EEB6419CF2FDD009F78D1 /* MainTableCell.m */; };
+		A01EEB6A19CF38FD009F78D1 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EEB6819CF38FD009F78D1 /* BLE.m */; };
+		A01EEB7019CF5815009F78D1 /* ScanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EEB6F19CF5815009F78D1 /* ScanTableViewController.m */; };
+		A01EEB7319CF5A64009F78D1 /* ScanTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EEB7219CF5A64009F78D1 /* ScanTableCell.m */; };
+		A0A143D519D2691300705E8C /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A143D419D2691300705E8C /* main.storyboard */; };
+		A0A143D819D2742A00705E8C /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A143D719D2742A00705E8C /* DejalActivityView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A01EEB4E19CF146A009F78D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A01EEB2919CF1469009F78D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A01EEB3019CF1469009F78D1;
+			remoteInfo = RavenHID;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A01EEB3119CF1469009F78D1 /* RavenHID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RavenHID.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01EEB3519CF1469009F78D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01EEB3619CF1469009F78D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A01EEB3819CF1469009F78D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A01EEB3919CF1469009F78D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A01EEB4419CF146A009F78D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A01EEB4719CF146A009F78D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A01EEB4D19CF146A009F78D1 /* RavenHIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavenHIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01EEB5219CF146A009F78D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01EEB5319CF146A009F78D1 /* RavenHIDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RavenHIDTests.m; sourceTree = "<group>"; };
+		A01EEB6019CF2E6A009F78D1 /* MainPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageController.h; sourceTree = "<group>"; };
+		A01EEB6119CF2E6A009F78D1 /* MainPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageController.m; sourceTree = "<group>"; };
+		A01EEB6319CF2FDD009F78D1 /* MainTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableCell.h; sourceTree = "<group>"; };
+		A01EEB6419CF2FDD009F78D1 /* MainTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableCell.m; sourceTree = "<group>"; };
+		A01EEB6719CF38FD009F78D1 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		A01EEB6819CF38FD009F78D1 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		A01EEB6919CF38FD009F78D1 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		A01EEB6E19CF5815009F78D1 /* ScanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanTableViewController.h; sourceTree = "<group>"; };
+		A01EEB6F19CF5815009F78D1 /* ScanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanTableViewController.m; sourceTree = "<group>"; };
+		A01EEB7119CF5A64009F78D1 /* ScanTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanTableCell.h; sourceTree = "<group>"; };
+		A01EEB7219CF5A64009F78D1 /* ScanTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanTableCell.m; sourceTree = "<group>"; };
+		A0A143D419D2691300705E8C /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		A0A143D619D2742A00705E8C /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DejalActivityView.h; path = ../DejalActivityView.h; sourceTree = "<group>"; };
+		A0A143D719D2742A00705E8C /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DejalActivityView.m; path = ../DejalActivityView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A01EEB2E19CF1469009F78D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A01EEB4A19CF146A009F78D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A01EEB2819CF1469009F78D1 = {
+			isa = PBXGroup;
+			children = (
+				A01EEB3319CF1469009F78D1 /* RavenHID */,
+				A01EEB5019CF146A009F78D1 /* RavenHIDTests */,
+				A01EEB3219CF1469009F78D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A01EEB3219CF1469009F78D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A01EEB3119CF1469009F78D1 /* RavenHID.app */,
+				A01EEB4D19CF146A009F78D1 /* RavenHIDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A01EEB3319CF1469009F78D1 /* RavenHID */ = {
+			isa = PBXGroup;
+			children = (
+				A01EEB6619CF38FD009F78D1 /* Libs */,
+				A01EEB3819CF1469009F78D1 /* AppDelegate.h */,
+				A01EEB3919CF1469009F78D1 /* AppDelegate.m */,
+				A0A143D919D2743100705E8C /* Main Page */,
+				A0A143DA19D2744200705E8C /* Scan Page */,
+				A0A143D419D2691300705E8C /* main.storyboard */,
+				A01EEB4419CF146A009F78D1 /* Images.xcassets */,
+				A01EEB4619CF146A009F78D1 /* LaunchScreen.xib */,
+				A01EEB3419CF1469009F78D1 /* Supporting Files */,
+			);
+			path = RavenHID;
+			sourceTree = "<group>";
+		};
+		A01EEB3419CF1469009F78D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A01EEB3519CF1469009F78D1 /* Info.plist */,
+				A01EEB3619CF1469009F78D1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A01EEB5019CF146A009F78D1 /* RavenHIDTests */ = {
+			isa = PBXGroup;
+			children = (
+				A01EEB5319CF146A009F78D1 /* RavenHIDTests.m */,
+				A01EEB5119CF146A009F78D1 /* Supporting Files */,
+			);
+			path = RavenHIDTests;
+			sourceTree = "<group>";
+		};
+		A01EEB5119CF146A009F78D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A01EEB5219CF146A009F78D1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A01EEB6619CF38FD009F78D1 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				A0A143D619D2742A00705E8C /* DejalActivityView.h */,
+				A0A143D719D2742A00705E8C /* DejalActivityView.m */,
+				A01EEB6719CF38FD009F78D1 /* BLE.h */,
+				A01EEB6819CF38FD009F78D1 /* BLE.m */,
+				A01EEB6919CF38FD009F78D1 /* BLEDefines.h */,
+			);
+			name = Libs;
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		A0A143D919D2743100705E8C /* Main Page */ = {
+			isa = PBXGroup;
+			children = (
+				A01EEB6019CF2E6A009F78D1 /* MainPageController.h */,
+				A01EEB6119CF2E6A009F78D1 /* MainPageController.m */,
+				A01EEB6319CF2FDD009F78D1 /* MainTableCell.h */,
+				A01EEB6419CF2FDD009F78D1 /* MainTableCell.m */,
+			);
+			name = "Main Page";
+			sourceTree = "<group>";
+		};
+		A0A143DA19D2744200705E8C /* Scan Page */ = {
+			isa = PBXGroup;
+			children = (
+				A01EEB6E19CF5815009F78D1 /* ScanTableViewController.h */,
+				A01EEB6F19CF5815009F78D1 /* ScanTableViewController.m */,
+				A01EEB7119CF5A64009F78D1 /* ScanTableCell.h */,
+				A01EEB7219CF5A64009F78D1 /* ScanTableCell.m */,
+			);
+			name = "Scan Page";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A01EEB3019CF1469009F78D1 /* RavenHID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A01EEB5719CF146A009F78D1 /* Build configuration list for PBXNativeTarget "RavenHID" */;
+			buildPhases = (
+				A01EEB2D19CF1469009F78D1 /* Sources */,
+				A01EEB2E19CF1469009F78D1 /* Frameworks */,
+				A01EEB2F19CF1469009F78D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RavenHID;
+			productName = RavenHID;
+			productReference = A01EEB3119CF1469009F78D1 /* RavenHID.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A01EEB4C19CF146A009F78D1 /* RavenHIDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A01EEB5A19CF146A009F78D1 /* Build configuration list for PBXNativeTarget "RavenHIDTests" */;
+			buildPhases = (
+				A01EEB4919CF146A009F78D1 /* Sources */,
+				A01EEB4A19CF146A009F78D1 /* Frameworks */,
+				A01EEB4B19CF146A009F78D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A01EEB4F19CF146A009F78D1 /* PBXTargetDependency */,
+			);
+			name = RavenHIDTests;
+			productName = RavenHIDTests;
+			productReference = A01EEB4D19CF146A009F78D1 /* RavenHIDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A01EEB2919CF1469009F78D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Lucas Morris";
+				TargetAttributes = {
+					A01EEB3019CF1469009F78D1 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 2JT73C79YV;
+					};
+					A01EEB4C19CF146A009F78D1 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 2JT73C79YV;
+						TestTargetID = A01EEB3019CF1469009F78D1;
+					};
+				};
+			};
+			buildConfigurationList = A01EEB2C19CF1469009F78D1 /* Build configuration list for PBXProject "RavenHID" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A01EEB2819CF1469009F78D1;
+			productRefGroup = A01EEB3219CF1469009F78D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A01EEB3019CF1469009F78D1 /* RavenHID */,
+				A01EEB4C19CF146A009F78D1 /* RavenHIDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A01EEB2F19CF1469009F78D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01EEB4819CF146A009F78D1 /* LaunchScreen.xib in Resources */,
+				A0A143D519D2691300705E8C /* main.storyboard in Resources */,
+				A01EEB4519CF146A009F78D1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A01EEB4B19CF146A009F78D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A01EEB2D19CF1469009F78D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01EEB7019CF5815009F78D1 /* ScanTableViewController.m in Sources */,
+				A01EEB3A19CF1469009F78D1 /* AppDelegate.m in Sources */,
+				A01EEB6519CF2FDD009F78D1 /* MainTableCell.m in Sources */,
+				A01EEB7319CF5A64009F78D1 /* ScanTableCell.m in Sources */,
+				A01EEB6A19CF38FD009F78D1 /* BLE.m in Sources */,
+				A01EEB3719CF1469009F78D1 /* main.m in Sources */,
+				A0A143D819D2742A00705E8C /* DejalActivityView.m in Sources */,
+				A01EEB6219CF2E6A009F78D1 /* MainPageController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A01EEB4919CF146A009F78D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01EEB5419CF146A009F78D1 /* RavenHIDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A01EEB4F19CF146A009F78D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A01EEB3019CF1469009F78D1 /* RavenHID */;
+			targetProxy = A01EEB4E19CF146A009F78D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A01EEB4619CF146A009F78D1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A01EEB4719CF146A009F78D1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A01EEB5519CF146A009F78D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A01EEB5619CF146A009F78D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A01EEB5819CF146A009F78D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RavenHID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A01EEB5919CF146A009F78D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RavenHID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A01EEB5B19CF146A009F78D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RavenHIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RavenHID.app/RavenHID";
+			};
+			name = Debug;
+		};
+		A01EEB5C19CF146A009F78D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RavenHIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RavenHID.app/RavenHID";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A01EEB2C19CF1469009F78D1 /* Build configuration list for PBXProject "RavenHID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01EEB5519CF146A009F78D1 /* Debug */,
+				A01EEB5619CF146A009F78D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A01EEB5719CF146A009F78D1 /* Build configuration list for PBXNativeTarget "RavenHID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01EEB5819CF146A009F78D1 /* Debug */,
+				A01EEB5919CF146A009F78D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A01EEB5A19CF146A009F78D1 /* Build configuration list for PBXNativeTarget "RavenHIDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01EEB5B19CF146A009F78D1 /* Debug */,
+				A01EEB5C19CF146A009F78D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A01EEB2919CF1469009F78D1 /* Project object */;
+}
