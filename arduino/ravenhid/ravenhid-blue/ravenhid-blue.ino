@@ -131,7 +131,7 @@ void sendBluetooth() {
 		char buff[21];
 		// not sure which of the two lines below will work
 		sprintf(buff, "%" PRIu64, card);
-		snprintf (buff, sizeof(buf)-1, "%llu", (unsigned long long) card);
+		sprintf (buff, sizeof(buf)-1, "%llu", (unsigned long long) card);
 		
 		len = sizeof(buff);
 		BLEMini.write();	

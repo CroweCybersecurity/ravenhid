@@ -1,6 +1,7 @@
 #include <SD.h>
 #include <LiquidCrystal.h>
 #include <SoftPWM.h>
+#include <AltSoftSerial.h>
 #include "lcd.h"
 #include "weigand.h"
 
@@ -18,6 +19,8 @@
 #define RFID_D1 3
 
 #define SD_CS 10
+
+AltSoftSerial BLEMini; 
 
 Weigand w(RFID_D0, RFID_D1);
 LiquidCrystal lcd(LCD_RS, LCD_ENABLE, LCD_D4, LCD_D5, LCD_D6, LCD_D7);
@@ -75,6 +78,7 @@ void loop() {
      setLCDColor(green);
      lcdWriteCard(w.getcount(), w.parsecard());
      sdWriteCard();
+     sendBluetooth();
 
      delay(2000);
      w.resetdata();
@@ -112,6 +116,20 @@ void sdWriteCard() {
     setLCDColor(error);
     lcdWriteLine1("Error writing.");
     lcdWriteLine2("to file."); 
+  }
+}
+
+void sendBluetooth() {
+  uint64_t card = w.parsecard();
+  if (BLEMini.available()) {
+    char buf[128];
+    sprintf(buf, "%llu", (unsigned long long) card);	
+    int len = strlen(buf);
+
+    BLEMini.write();
+    for (int i = 0; i < len; i++) {
+      BLEMini.write(buf[i]);
+    }
   }
 }
 
